@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Equipment</title>
+
+  <link rel="stylesheet" media="screen and (min-width: 0px)" href="contact_mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 700px)" href="contact.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+
+  <script>
+    var penColour = 'black';
+
+    function setPencolour(pen)
+    {
+      penColour = pen;
+    }
+
+    function setPixelColour(pixel)
+    {
+      pixel.style.backgroundColor = penColour;
+    }
+    </script>
+
+
+</head>
+<body>
+
+  <div id="container">
+      <h1>Brampton Soccer Club</h1>
+      <img id="logo" src="logo.png">
+     <!-- <img id="logo1" src="logo1.png">-->
+  </div>
+  <div class="container1">
+      <center>
+        <h2>Contact</h2>
+        <ul>
+          <li><a id="subtitles" href="welcome.html">Home Page</a></li>
+          <li><a id="subtitles" href="location.html">Location</a></li>
+          <li><a id="subtitles" href="gear.html">Equipment</a></li>
+          <li><a id="subtitles" class="active" href="contact.html">Contact</a></li>
+          <li><a id="subtitles" href="login.html">Sign Out</a></li>
+        </ul>
+
+        <h3 class="questions">If you have any questions about the club, or if you want to register your child, please contact me through email or phone number</h3>
+      </center>
+
+      <div id="box">
+        <h3 class="move">Email</h3>
+        <p class="move">soccer_club@gmail.com</p>
+        <h3 class="move">Phone Number</h3>
+        <p class="move">(905)-123-4567</p>
+      </div>
+      <center>
+
+        <div id="palette">
+  <div class="pen" style="background-color:white;" onclick="setPencolour('white')"></div>
+  <div class="pen" style="background-color:black;" onclick="setPencolour('black')"></div>
+  <div class="pen" style="background-color:red;" onclick="setPencolour('red')"></div>
+  <div class="pen" style="background-color:yellow;" onclick="setPencolour('yellow')"></div>
+  <div class="pen" style="background-color:blue;" onclick="setPencolour('blue')"></div>
+  <div class="pen" style="background-color:green;" onclick="setPencolour('green')"></div>
+  <div class="pen" style="background-color:orange;" onclick="setPencolour('orange')"></div>
+  <div class="pen" style="background-color:purple;" onclick="setPencolour('purple')"></div>
+
+</div>
+
+<div id="art">
+<div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+  <div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+  <div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+  <div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+  <div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+  <div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+  <div class="row">
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+  <div class="pixel" onclick="setPixelColour(this)"></div>
+</div>
+</center>
+
+</div>
+<center>
+<p class="feedback">Our club is based off the feedback you give us. In order to improve our club, could you please create a drawing on the grid indicating your satisfaction. When your done, please click the submit button.</p>
+</center>
+
+<form action="contact.html" method="post" onsubmit="return checkForm(this);">
+  <input type="submit" value="Submit">
+</form>
+
+</div>
+
+        <div id="container2">
+
+        </div>
+</body>
+</html>

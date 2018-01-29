@@ -1,0 +1,130 @@
+body {
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px  black;
+    position:relative; top:40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    text-align: center;
+    color: #1E2330;
+}
+
+#container {
+    height:300px;
+    width:100%;
+    position:relative; top:-55px;
+    background-image: url("grass.jpg");
+    background-position: 100%;
+}
+
+.container1 {
+    height:1050px;
+    width:100%;
+}
+
+#container2  {
+    background-color:#1E2330;
+    height:75px;
+    width:100%;
+}
+
+#logo {
+    position:relative;right:-80px; top:45px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E2330;
+    width: 74%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    float: left;
+    position:center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#art {
+  display: table;
+  border-spacing: 1px;
+  background-color: black;
+  border: 5px solid black;
+  position: relative; top:75px;
+}
+
+.pixel {
+  display: table-cell;
+  background-color: white;
+  width:40px;
+  height:40px;
+}
+
+.pen {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+}
+#palette {
+  position: relative; top:50px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+      font-size:15px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.move {
+  position: relative;right:-25px;
+}
+
+#box {
+  width: 250px;
+  padding: 10px;
+  border: 5px solid #1E2330 ;
+  position: relative; right:-35px;
+}
+
+.feedback {
+  position: relative; top: -100px;
+}
+
+input[type=submit] {
+  height:40px;
+  width:100px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative; right: -125px; top: -50px;
+}

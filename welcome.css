@@ -1,0 +1,79 @@
+body {
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size:90px;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px  black;
+    position:relative; top:70px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:35px;
+    text-align: center;
+    color: white;
+}
+
+#container {
+    height:300px;
+    width:100%;
+    position:relative; top:-55px;
+    background-image: url("grass.jpg");
+    background-position: 100%;
+}
+
+.container1 {
+    height:425px;
+    width:100%;
+}
+
+#container2  {
+    background-color:#1E2330;
+    height:150px;
+    width:100%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E2330;
+    width: 31.9%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    float: left;
+    position:center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#logo {
+    position:relative;right:-10px; top:25px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location</title>
+
+    <link rel="stylesheet" media="screen and (min-width: 0px)" href="location_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="location.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="container">
+      <h1>Brampton Soccer Club</h1>
+      <img id="logo" src="logo.png">
+
+  </div>
+  <div class="container1">
+      <center>
+          <h2>Location</h2>
+        <ul>
+          <li><a href="welcome.html">Home Page</a></li>
+          <li><a class="active" href="location.html">Location</a></li>
+          <li><a href="gear.html">Equipment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Sign Out</a></li>
+        </ul>
+
+        <div id="school_map">
+
+            <script>
+
+            var all_markers=[];
+
+        //coordinated of the tree image on the map. This info will go into the place_marker
+        //function to be outputed into the browser
+            var data =`43.667298 -79.821698 target.png`;
+
+            var markers = data.split("\n");
+                var school_map;
+                function initMap() {
+
+                var myLatLng = {lat: 43.6679943, lng: -79.826560};
+                school_map = new google.maps.Map(document.getElementById('school_map'), {
+                zoom: 13,
+                center: {lat: 43.6679943, lng: -79.826560}
+                });
+
+                var marker
+
+                var trafficLayer = new google.maps.TrafficLayer();
+                trafficLayer.setMap(school_map);
+
+                if(navigator.geolocation) {
+                    navigator.geolocation.watchPosition(set_my_position);
+                }
+                else {
+                    alert("Geolocation doesn't work in your browser");
+                }
+
+                for(var i=0; i < markers.length; i++){
+                  var marker_data = markers[i].trim();
+                  marker_data = marker_data.split(" ");
+
+                  var latitude = marker_data[0];
+                  var longitude = marker_data[1];
+                  var emoji = marker_data[2];
+
+                  var marker_position = new google.maps.LatLng(marker_data[0],marker_data[1]);
+                  var marker = new google.maps.Marker({
+
+                    position: marker_position,
+                    map: school_map,
+                    icon: emoji
+                  });
+
+          //The images are now outputed to their assigned coordinated
+                  all_markers.push(marker);
+                }
+
+                var drawingManager = new google.maps.drawing.DrawingManager({
+                  drawingMode: google.maps.drawing.OverlayType.MARKER,
+                  drawingControl: true,
+                  drawingControlOptions: {
+                    position: google.maps.ControlPosition.TOP_CENTER,
+                    drawingModes:['marker', 'circle', 'polygon', 'polyline','rectangle']
+                  },
+                  markerOptions:{icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'},
+                  cicleOptions: {
+                    fillcolor:'#ffff00',
+                    fillOpacity: 1,
+                    strokeWeight: 5,
+                    clickable: false,
+                    editable: true,
+                    zIndex: 1
+                  },
+                });
+          //Will output the shapes when user intereacts with the drawing box
+                  drawingManager.setMap(school_map);
+                }
+
+                function set_my_position(position){
+                    emoji = ("emoji.png")
+                    var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                    var marker = new google.maps.Marker({
+
+                        position: pos,
+                        map: school_map,
+                        icon: emoji
+                        });
+                }
+
+            </script>
+
+        </div>
+        <div id="box">
+        <strong>
+          <h3>Jean Augustine Secondary School</h3>
+          <h3>500 Elbern Markell Dr.</h3>
+          <h3>Brampton, ON</h3>
+          <h3>L6X 5L3</h3>
+        </strong>
+        </div>
+      </center>
+
+  </div>
+  <div id="container2">
+
+  </div>
+
+    <script async defer
+      src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHpmjDhNUu39u-f1-AgkFVa0uuVu85qaU&libraries=drawing&callback=initMap">
+    </script>
+
+</body>
+</html>

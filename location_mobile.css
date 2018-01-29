@@ -1,0 +1,100 @@
+body {
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px  black;
+    position:relative; top:40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    text-align: center;
+    color: #1E2330;
+}
+
+#container {
+    height:300px;
+    width:100%;
+    position:relative; top:-55px;
+    background-image: url("grass.jpg");
+    background-position: 100%;
+}
+
+.container1 {
+    height:800px;
+    width:100%;
+}
+
+#container2  {
+    background-color:#1E2330;
+    height:75px;
+    width:100%;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    text-align:center;
+    color:#1C263C;
+    position:relative;
+}
+
+#logo {
+    position:relative;right:-80px; top:45px;
+}
+
+#school_map {
+width: 340px;
+height: 300px;
+background-color: grey;
+position:relative; top:73px;
+border-style:solid;
+border-color: #1E2330;
+box-shadow: 0 30px 40px rgba(0,0,0,.5);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E2330;
+    width: 74%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    float: left;
+    position:center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#box {
+  width: 300px;
+  padding: 10px;
+  border: 5px solid #1E2330 ;
+  position: relative;top:150px;
+}

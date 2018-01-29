@@ -1,0 +1,115 @@
+body {
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size:50px;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px  black;
+    position:relative; top:40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    text-align: center;
+    color: #1E2330;
+}
+
+#container {
+    height:300px;
+    width:100%;
+    position:relative; top:-55px;
+    background-image: url("grass.jpg");
+    background-position: 100%;
+}
+
+.container1 {
+    height:1125px;
+    width:100%;
+}
+
+#container2  {
+    background-color:#1E2330;
+    height:75px;
+    width:100%;
+}
+
+#logo {
+    position:relative;right:-80px; top:45px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E2330;
+    width: 74%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    float: left;
+    position:center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#box {
+  width: 250px;
+  padding: 10px;
+  border: 5px solid #1E2330 ;
+  position: relative;top:50px;
+}
+
+video {
+    height:350px;
+    width:350px;
+    position: relative;top:75px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    text-align:center;
+    color:#1C263C;
+    position:relative; top: 25px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.stores {
+  position:relative;top:75px;
+}
+
+.importance {
+    position:relative; top: 100px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.reason {
+    position:relative; top:125px;
+}

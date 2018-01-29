@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Login Page</title>
+
+
+        <link rel="stylesheet" media="screen and (min-width: 0px)" href="login_mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 700px)" href="login.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+
+    <script>
+        function checkForm(form)
+    {
+      if(form.firstname.value == "") {
+        alert("Error: First name is empty!");
+        form.firstname.focus();
+        return false;
+      }
+
+      if (form.lastname.value == "") {
+        alert("Error: Last name is empty!");
+        form.lastname.focus();
+        return false;
+      }
+
+      return true;
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+    <h1>Login </h1>
+    <center>
+      <a class="button" href="index.html">Home Page</a>
+    </enter>
+
+     <div class="container">
+          <div class="left">
+
+            <form action="welcome.html" method="post" onsubmit="return checkForm(this);">
+
+          <div class="all_move">
+            <div class="move">
+              <h3>First Name:</h3>
+              <input type="text" placeholder="Enter First name" name="firstname" >
+            </div>
+
+            <div class="move1">
+              <h3>Last Name:</h3>
+              <input type="text" placeholder="Enter Last name" name="lastname" >
+            </div>
+
+            <div class="move2">
+              <input type="submit" value="Sign In">
+            </div>
+          </div>
+          </div>
+          </form>
+                </div>
+
+
+          </div>
+
+</body>
+</html>
